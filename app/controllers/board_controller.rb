@@ -94,6 +94,6 @@ class BoardController < ApplicationController
     @lotto_post = Lotto.find(params[:del_id])
     @lotto_post.destroy
     
-    redirect_to '/board/list'
+    redirect_to '/board/list_lotto'
   end
 end
