@@ -23,7 +23,7 @@
       <div class="row">
       <% @lotto_post.each do |post|%>
         <div class="col-md-3 img_height" >
-            <a href="/board/detail_lotto/<%=post.id%>"><%=image_tag "lotto_num/"+post.lotto_num+".jpg"%></a>
+            <a href="/board/detail_lotto/<%=post.id%>"><%=image_tag post.lotto_num+".jpg"%></a>
         </div>
           
       <% end %>
