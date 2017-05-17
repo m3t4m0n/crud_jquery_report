@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   post 'board/read_lotto' => 'board#read_lotto'
   get 'board/update_lotto'
   get 'board/update_lotto/:update_id' => 'board#update_lotto'
-  post 'board/update_ok_lotto/:id' => 'board#update_ok_lotto'
+  post 'board/update_ok_lotto/:update_id' => 'board#update_ok_lotto'
   get 'board/delete_lotto/:del_id' => 'board#delete_lotto'
   get 'board/detail_lotto/:detail_id' => 'board#detail_lotto'
   

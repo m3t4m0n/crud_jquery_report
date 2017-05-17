@@ -83,8 +83,8 @@ class BoardController < ApplicationController
   end
   
   def update_ok_lotto
-    @lotto_post  = Lotto.find(params[:num])
-   
+    @lotto_post  = Lotto.find(params[:update_id])
+    @lotto_post.lotto_num = params[:num]
     @lotto_post.save
     
     redirect_to '/board/list_lotto'
