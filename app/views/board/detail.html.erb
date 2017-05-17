@@ -1,0 +1,19 @@
+<h1>Board#detail</h1>
+<p>Find me in app/views/board/detail.html.erb</p>
+
+<div class="container">
+    <p>TITLE</p>
+    <%=@one_post.title%><br><br><br>
+    <p>CONTENT</p>
+    <%=@one_post.content%><br><br><br>
+    
+    <p>WRITER</p>
+    <%=@one_post.writer%><br><br><br>
+    
+    <p>HITS</p>
+    <%=@one_post.hits%><br><br><br>
+    <hr />
+    
+    <a href="/board/delete/<%=@one_post.id%>">삭제</a>
+    <a href="/board/update/<%=@one_post.id%>">수정</a>
+</div>

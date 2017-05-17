@@ -1,0 +1,11 @@
+<h1>Board#detail</h1>
+<p>Find me in app/views/board/detail_lotto.html.erb</p>
+
+<div class="container">
+    <p>NUMBER</p>
+    <%=@lotto_post.lotto_num%><br><br><br>
+    <hr />
+    
+    <a href="/board/delete_lotto/<%=@one_post.id%>">삭제</a>
+    <a href="/board/update_lotto/<%=@one_post.id%>">수정</a>
+</div>

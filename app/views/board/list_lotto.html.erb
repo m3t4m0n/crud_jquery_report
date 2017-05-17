@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    .img_height {
+    	height: 100px;
+    }
+    </style>
+
+</head>
+<body>
+
+    <div class='container'>  
+  
+      <h1>로또 게시판</h1>
+      
+      <a href="/">Main</a><br>
+      <a href="/board/create_lotto">Write</a><br>
+      <br><br>
+      
+      <hr />
+      
+      <div class="row">
+      <% @lotto_post.each do |post|%>
+        <div class="col-md-3 img_height" >
+            <a href="/board/detail_lotto/<%=post.id%>"><%=image_tag "lotto_num/"+post.lotto_num+".jpg"%></a>
+        </div>
+          
+      <% end %>
+      </div>
+    </div>
+
+</body>
+</html>

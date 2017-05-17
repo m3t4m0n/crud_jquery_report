@@ -1,0 +1,18 @@
+<div class="container">
+<h1>Board#list</h1>
+<p>Find me in app/views/board/list.html.erb</p>
+
+<div class="container">
+    <table class="table">
+        <th>제목</th><th>글쓴이</th><th>날짜</th><th>조회수</th>
+    <% @all_post.each do |post| %>
+        <tr>
+            <td><a href="/board/detail/<%=post.id%>"><%=post.title%></a></td>
+            <td><%=post.writer%></td>
+            <td><%=post.created_at%></td>
+            <td><%=post.hits%></td>
+        </tr>
+    <% end %>
+    </table>
+    <a href="/board/create">글쓰기</a>
+</div>
